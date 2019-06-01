@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Processing.js Demo</title>
+</head>
+
+<body>
+    <script src="http://java.com/js/deployJava.js"></script>
+    <script>
+        // パスの起点、init()が実装されたクラス名、jarファイル、幅と高を指定
+        var attributes = { codebase: 'http://festivoice.net/', code: 'net.festivoice.AppletLauncher', archive: 'issen.jar', width: 300, height: 200 };
+        // 引数を指定
+        var parameters = { host: 'stream.festivoice.net', port: 11100, user: '-', channel: '-' };
+        deployJava.runApplet(attributes, parameters, '1.5');  // 1.5: このアプリケーションの実行に必要なJavaのバージョンを指定
+    </script>
+</body>
+
+</html>
